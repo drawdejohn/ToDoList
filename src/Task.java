@@ -1,6 +1,8 @@
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Task {
+public class Task implements Serializable {
+    private static final long serialVersionUID = 1L;
     private String name;
     private String description;
     private LocalDate dueDate;
@@ -39,6 +41,10 @@ public class Task {
 
     public void setDone(boolean done) {
         this.done = done;
+    }
+
+    public boolean isDone() {
+        return done;
     }
 
     @Override

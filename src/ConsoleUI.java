@@ -42,6 +42,7 @@ public class ConsoleUI {
         Task task = new Task(name, description, dueDate);
         taskManager.addTask(task);
         System.out.println("Task added.");
+        TaskFileHandler.saveTasks(taskManager.getTasks());
     }
 
     public void removeTask() {
@@ -49,12 +50,15 @@ public class ConsoleUI {
         int index = Integer.parseInt(scanner.nextLine());
         taskManager.removeTask(index);
         System.out.println("Task removed.");
+        TaskFileHandler.saveTasks(taskManager.getTasks());
     }
+
     public void markTaskAsDone() {
         System.out.println("Enter the index of the task to mark as done:");
         int index = Integer.parseInt(scanner.nextLine());
         taskManager.markTaskAsDone(index);
         System.out.println("Task marked as done.");
+        TaskFileHandler.saveTasks(taskManager.getTasks());
     }
 
     public void markTaskAsNotDone() {
@@ -62,6 +66,7 @@ public class ConsoleUI {
         int index = Integer.parseInt(scanner.nextLine());
         taskManager.markTaskAsNotDone(index);
         System.out.println("Task marked as not done.");
+        TaskFileHandler.saveTasks(taskManager.getTasks());
     }
 
     public void displayTaskDetails() {
