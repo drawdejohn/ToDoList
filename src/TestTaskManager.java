@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-public class TaskManagerTest {
+public class TestTaskManager {
     public static void main(String[] args) {
         TaskManager taskManager = new TaskManager();
         Task task1 = new Task("Test task 1", "This is a test task", LocalDate.now());
