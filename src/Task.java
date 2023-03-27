@@ -1,36 +1,37 @@
-// define three private instance variables to represent the task name, task description, and task due date
-private String name;
-private String description;
-private LocalDate dueDate;
+import java.time.LocalDate;
 
-//Create a constructor for the Task class that takes in the task name, task description, and task due date as parameters and initializes the instance variables
-public Task(String name, String description, LocalDate dueDate) {
-    this.name = name;
-    this.description = description;
-    this.dueDate = dueDate;
-}
+public class Task {
+    private String name;
+    private String description;
+    private LocalDate dueDate;
 
-//Create getter and setter methods for each of the instance variables
-public String getName() {
-    return name;
-}
+    public Task(String name, String description, LocalDate dueDate) {
+        this.name = name;
+        this.description = description;
+        this.dueDate = dueDate;
+    }
 
-public void setName(String name) {
-    this.name = name;
-}
+    public String getName() {
+        return name;
+    }
 
-public String getDescription() {
-    return description;
-}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-public void setDescription(String description) {
-    this.description = description;
-}
+    public String getDescription() {
+        return description;
+    }
 
-public LocalDate getDueDate() {
-    return dueDate;
-}
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
-public void setDueDate(LocalDate dueDate) {
-    this.dueDate = dueDate;
+    public LocalDate getDueDate() {
+        return dueDate;
+    }
+
+    public void setDueDate(LocalDate dueDate) {
+        this.dueDate = dueDate;
+    }
 }
