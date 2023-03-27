@@ -1,18 +1,22 @@
-## Getting Started
+# To-Do List App
+## Overview
+The To-Do List App is a simple Java application that allows users to create and manage their to-do lists. The app provides a console-based user interface that allows users to add new tasks, mark tasks as completed, and remove tasks from their to-do list. The app also supports persistence by storing the to-do list in a file.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## How To Use
+To use the To-Do List App, follow these steps:
 
-## Folder Structure
+1. Clone the repository onto your local machine.
+2. 2Open the project in your Java IDE.
+3. Build the project and run the main class.
+4. Follow the instructions displayed in the console to create and manage your to-do list.
 
-The workspace contains two folders by default, where:
+## Technologies
+The To-Do List App is built using Java and uses the Java IO classes for file handling.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Features
+The To-Do List App provides the following features:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- Add new tasks to the to-do list
+- Mark tasks as completed
+- Remove tasks from the to-do list
+- Persist the to-do list to a file

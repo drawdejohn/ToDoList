@@ -26,7 +26,7 @@ public class ConsoleUI {
     }
 
     public void displayMenu() {
-        System.out.println(ANSI_BOLD + ANSI_CYAN + "What would you like to do?" + ANSI_RESET);
+        System.out.println(ANSI_BOLD + ANSI_CYAN + "\nWhat would you like to do?" + ANSI_RESET);
         System.out.println(ANSI_YELLOW + "1. Display all tasks" + ANSI_RESET);
         System.out.println(ANSI_YELLOW + "2. Add a new task" + ANSI_RESET);
         System.out.println(ANSI_YELLOW + "3. Remove a task" + ANSI_RESET);
