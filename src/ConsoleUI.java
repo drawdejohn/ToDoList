@@ -50,4 +50,28 @@ public class ConsoleUI {
         taskManager.removeTask(index);
         System.out.println("Task removed.");
     }
+    public void markTaskAsDone() {
+        System.out.println("Enter the index of the task to mark as done:");
+        int index = Integer.parseInt(scanner.nextLine());
+        taskManager.markTaskAsDone(index);
+        System.out.println("Task marked as done.");
+    }
+
+    public void markTaskAsNotDone() {
+        System.out.println("Enter the index of the task to mark as not done:");
+        int index = Integer.parseInt(scanner.nextLine());
+        taskManager.markTaskAsNotDone(index);
+        System.out.println("Task marked as not done.");
+    }
+
+    public void displayTaskDetails() {
+        System.out.println("Enter the index of the task to display details for:");
+        int index = Integer.parseInt(scanner.nextLine());
+        Task task = taskManager.getTask(index);
+        if (task != null) {
+            System.out.println(task.toString());
+        } else {
+            System.out.println("Invalid index.");
+        }
+    }
 }

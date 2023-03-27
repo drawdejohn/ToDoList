@@ -28,4 +28,19 @@ public class TaskManager {
     public int getTaskCount() {
         return tasks.size();
     }
+
+
+    public void markTaskAsDone(int index) {
+        Task task = getTask(index);
+        if (task != null) {
+            task.setDone(true);
+        }
+    }
+
+    public void markTaskAsNotDone(int index) {
+        Task task = getTask(index);
+        if (task != null) {
+            task.setDone(false);
+        }
+    }
 }
